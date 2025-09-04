@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WECM Content\n"
+"Project-Id-Version: WECM Age Gate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-28 13:39+0000\n"
-"PO-Revision-Date: 2024-06-28 13:40+0000\n"
+"POT-Creation-Date: 2025-09-04 13:49+0000\n"
+"PO-Revision-Date: 2025-09-04 13:50+0000\n"
 "Last-Translator: \n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -12,12 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.10; wp-6.5.5\n"
-"X-Domain: wecmcontent"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.20\n"
+"X-Domain: wecmagegate"
 
 #. Description of the plugin
-msgid "Basic content elements and configuration for websites by WECM"
-msgstr "Content-Elemente und Konfigurationen für WECM-Websites"
+msgid "Age gate plugin for websites by WECM"
+msgstr "Altersfreigabe-Plugin für Websites von WECM"
 
 #. Author of the plugin
 msgid "Christian Maul"
@@ -29,5 +29,5 @@ msgid "https://christianmaul.de/"
 msgstr "https://christianmaul.de/"
 
 #. Name of the plugin
-msgid "WECM Content"
-msgstr "WECM Content"
+msgid "WECM Age Gate"
+msgstr "WECM Altersabfrage"
