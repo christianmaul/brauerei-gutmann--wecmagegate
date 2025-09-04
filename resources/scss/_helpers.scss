@@ -1,0 +1,52 @@
+/**
+ * Helper Classes
+ */
+
+// Fonts
+.font-heading {
+    font-family: $font-family-heading;
+    font-size: $font-size-heading;
+    font-weight: $font-weight-heading;
+    letter-spacing: $letter-spacing-heading;
+    line-height: $line-height-heading;
+}
+
+.font-subheading {
+    font-family: $font-family-heading;
+    font-size: $font-size-subheading;
+    font-weight: $font-weight-heading;
+    letter-spacing: $letter-spacing-heading;
+    line-height: $line-height-heading;
+}
+
+.font-lead {
+    font-family: $font-family-heading;
+    font-size: $font-size-lead;
+    font-weight: $font-weight-heading; 
+    letter-spacing: $letter-spacing-heading;
+    line-height: $line-height-heading;
+}
+
+.font-base {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    letter-spacing: $letter-spacing-base;
+    line-height: $line-height-base;
+}
+
+.font-medium {
+    font-family: $font-family-heading;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-medium;
+    letter-spacing: $letter-spacing-medium;
+    line-height: $line-height-medium;
+}
+
+.font-small {
+    font-family: $font-family-base;
+    font-size: $font-size-small;
+    font-weight: $font-weight-small;
+    letter-spacing: $letter-spacing-small;
+    line-height: $line-height-small;
+}

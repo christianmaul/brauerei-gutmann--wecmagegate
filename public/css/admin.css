@@ -1,0 +1,12 @@
+.cm-block-icon:before {
+  background-image: url("../img/cm-block-icon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  display: inline-block;
+  height: 14px;
+  margin-right: 0;
+  transform: translateY(2px);
+  width: 14px;
+}

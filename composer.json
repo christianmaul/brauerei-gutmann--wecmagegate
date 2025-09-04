@@ -1,0 +1,14 @@
+{
+    "name": "wecm/wecmagegate",
+    "description": "Age gate plugin for websites by WECM.",
+    "type": "wordpress-plugin",
+    "version": "1.0.0",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wecm\\AgeGate\\": "app"
+        }
+    }
+}

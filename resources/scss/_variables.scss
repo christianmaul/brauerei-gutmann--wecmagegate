@@ -1,0 +1,38 @@
+// Colors
+$black: var(--awb-color1);
+$white: var(--awb-color2);
+$gray-100: var(--awb-color3);
+$gray-80: var(--awb-color4);
+$gray-60: var(--awb-color5);
+$gray-40: var(--awb-color6); 
+
+// Fonts
+$font-family-heading: var(--awb-typography1-font-family);
+$font-family-base: var(--awb-typography4-font-family);
+$font-family-heavy: var(--button_typography-font-family);
+
+$font-size-heading: var(--awb-typography1-font-size);
+$font-size-subheading: var(--awb-typography2-font-size);
+$font-size-lead: var(--awb-typography3-font-size);
+$font-size-base: var(--awb-typography4-font-size);
+$font-size-small: var(--awb-typography5-font-size);
+$font-size-medium: var(--awb-custom_typography_1-font-size);
+
+$font-weight-heading: var(--awb-typography1-font-weight);
+$letter-spacing-heading: var(--awb-typography1-letter-spacing);
+$line-height-heading: var(--awb-typography1-line-height);
+
+$font-weight-base: var(--awb-typography4-font-weight);
+$letter-spacing-base: var(--awb-typography4-letter-spacing);
+$line-height-base: var(--awb-typography4-line-height);
+
+$font-weight-small: var(--awb-typography5-font-weight);
+$letter-spacing-small: var(--awb-typography5-letter-spacing);
+$line-height-small: var(--awb-typography5-line-height);
+
+$font-weight-medium: var(--awb-custom_typography_1-font-weight);
+$letter-spacing-medium: var(--awb-custom_typography_1-letter-spacing);
+$line-height-medium: var(--awb-custom_typography_1-line-height);
+
+// Widths and Breakpoints
+$site-width: var(--site_width);
