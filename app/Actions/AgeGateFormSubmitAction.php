@@ -9,7 +9,7 @@ use Wecm\Core\Services\HttpRequestService;
 use Wecm\Core\Services\RedirectService;
 
 /**
- * AgeGateFormSubmitAction
+ * Age Gate Form Submit Action
  *
  * @author Christian Maul <hello@christianmaul.de>
  * @copyright 2025 Christian Maul
