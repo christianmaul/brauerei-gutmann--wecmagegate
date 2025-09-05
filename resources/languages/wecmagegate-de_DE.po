@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WECM Age Gate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 13:49+0000\n"
-"PO-Revision-Date: 2025-09-04 13:50+0000\n"
+"PO-Revision-Date: 2025-09-04 15:30+0000\n"
 "Last-Translator: \n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -28,6 +28,44 @@ msgstr "Christian Maul"
 msgid "https://christianmaul.de/"
 msgstr "https://christianmaul.de/"
 
+#: resources/views/templates/age-gate.blade.php:21
+msgid "I am not of legal drinking age"
+msgstr "Nein, ich bin noch nicht 16 Jahre alt"
+
+#: resources/views/templates/age-gate.blade.php:15
+msgid "I am of legal drinking age"
+msgstr "Ja, ich bin 16 Jahre oder älter"
+
+#: resources/views/templates/age-gate.blade.php:27
+msgid ""
+"If you confirm your age by clicking “Yes” a cookie will be set in your "
+"browser. This cookie is valid for 30 days. During this period, you will not "
+"need to confirm your age again. Your information will not be transferred to "
+"our system or passed on to third parties at any time."
+msgstr ""
+"Wenn Du Dein Alter mit einem Klick auf \"Ja\" bestätigst, wird in Deinem "
+"Browser ein Cookie gesetzt. Dieser Cookie ist 30 Tage lang gültig. In diesem "
+"Zeitraum musst Du Dein Alter nicht erneut bestätigen. Deine Angaben werden "
+"zu keinem Zeitpunkt an unser System übertragen oder an Dritte weitergegeben."
+
+#: resources/views/templates/age-gate.blade.php:10
+msgid ""
+"This website requires you to be of legal drinking age in your country to "
+"enter. Please confirm that you are of legal drinking age to proceed."
+msgstr ""
+"Gesellschaftliche Verantwortung ist ein wichtiger Bestandteil unserer "
+"Unternehmensphilosophie. Dazu zählt für uns neben nachhaltigem Wirtschaften "
+"und sozialem Engagement auch der verantwortungsbewusste Umgang mit unseren "
+"Produkten. Wir positionieren uns klar für einen maßvollen Konsum und gegen "
+"Alkoholmissbrauch. Unsere Website enthält Informationen zu alkoholischen "
+"Getränken und ist daher nur für Besucher ab 16 Jahren zugänglich.\n"
+"\n"
+"Erfüllst Du das gesetzliche Mindestalter für den Bierkonsum?"
+
 #. Name of the plugin
 msgid "WECM Age Gate"
 msgstr "WECM Altersabfrage"
+
+#: resources/views/templates/age-gate.blade.php:6
+msgid "Welcome to Brauerei Gutmann"
+msgstr "Herzlich Willkommen in der Brauerei Gutmann!"

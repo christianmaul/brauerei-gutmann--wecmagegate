@@ -1,0 +1,130 @@
+.cm-agegate {
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background: rgba(0,0,0,0.5);
+    display: none;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    &--visible {
+        display: flex;
+    }
+
+    .cm-form {
+        background: map-get($colors, white);
+        max-height: 100%;
+        overflow: auto;
+        padding: map-get($spacings, sm);
+        text-align: center;
+        width: map-get($widths, site);
+
+        @media only screen and (min-width: map-get($breakpoints, md-min)) {
+            overflow: unset;
+            padding: 0 map-get($spacings, lg) map-get($spacings, md);
+        }
+
+        &__header {
+            img {
+                margin: 0 0 map-get($spacings, md);
+                max-width: 100px;
+
+                @media only screen and (min-width: map-get($breakpoints, md-min)) {
+                    margin: calc(map-get($spacings, lg) * -1) 0 map-get($spacings, md);
+                    max-width: 200px;
+                }
+            }
+
+            p {
+                color: map-get($colors, royal-blue);
+                margin: 0 0 map-get($spacings, sm);
+            }
+        }
+
+        &__footer {
+            p {
+                margin: map-get($spacings, lg) 0 0;
+            }
+        }
+
+        &__message {
+            margin: 0 0 map-get($spacings, lg);
+
+            p {
+                margin: 0 0 map-get($spacings, sm);
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__input {
+            
+            margin: 0 auto map-get($spacings, sm); 
+            max-width: map-get($widths, sm);
+            text-align: left;
+            width: 100%;
+
+            input {
+                display: none;
+
+                &:checked + label:after {
+                    visibility: visible;
+                }
+            }
+
+            label {
+                display: flex;
+                font-weight: bold;
+                padding-left: 2.5rem;
+                position: relative;
+
+                &:before {
+                    border: 1px solid map-get($colors, black);
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    content: '';
+                    display: inline-block;
+                    height: 2rem;
+                    left: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 2rem;
+                }
+
+                &:after {
+                    background: map-get($colors, royal-blue);
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    content: '';
+                    display: inline-block;
+                    height: 1.5rem;
+                    left: 0.25rem;
+                    position: absolute;
+                    top: calc(50% - 0.75rem);
+                    visibility: hidden;
+                    width: 1.5rem;
+                }
+                
+                &:hover {
+                    cursor: pointer;
+
+                    &:after {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body:has(.cm-agegate--visible) {
+    overflow: hidden;
+}

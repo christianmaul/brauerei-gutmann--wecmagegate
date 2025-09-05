@@ -1,50 +1,186 @@
 /**
  * Helper Classes
  */
-.font-heading {
+.cm-font--heading {
   font-family: var(--awb-typography1-font-family);
   font-size: var(--awb-typography1-font-size);
   font-weight: var(--awb-typography1-font-weight);
   letter-spacing: var(--awb-typography1-letter-spacing);
   line-height: var(--awb-typography1-line-height);
 }
-
-.font-subheading {
+.cm-font--subheading {
   font-family: var(--awb-typography1-font-family);
   font-size: var(--awb-typography2-font-size);
-  font-weight: var(--awb-typography1-font-weight);
-  letter-spacing: var(--awb-typography1-letter-spacing);
-  line-height: var(--awb-typography1-line-height);
+  font-weight: var(--awb-typography2-font-weight);
+  letter-spacing: var(--awb-typography2-letter-spacing);
+  line-height: var(--awb-typography2-line-height);
 }
-
-.font-lead {
+.cm-font--large {
   font-family: var(--awb-typography1-font-family);
   font-size: var(--awb-typography3-font-size);
-  font-weight: var(--awb-typography1-font-weight);
-  letter-spacing: var(--awb-typography1-letter-spacing);
-  line-height: var(--awb-typography1-line-height);
+  font-weight: var(--awb-typography3-font-weight);
+  letter-spacing: var(--awb-typography3-letter-spacing);
+  line-height: var(--awb-typography3-line-height);
 }
-
-.font-base {
+.cm-font--medium {
   font-family: var(--awb-typography4-font-family);
   font-size: var(--awb-typography4-font-size);
   font-weight: var(--awb-typography4-font-weight);
   letter-spacing: var(--awb-typography4-letter-spacing);
   line-height: var(--awb-typography4-line-height);
 }
-
-.font-medium {
-  font-family: var(--awb-typography1-font-family);
-  font-size: var(--awb-custom_typography_1-font-size);
-  font-weight: var(--awb-custom_typography_1-font-weight);
-  letter-spacing: var(--awb-custom_typography_1-letter-spacing);
-  line-height: var(--awb-custom_typography_1-line-height);
-}
-
-.font-small {
+.cm-font--small {
   font-family: var(--awb-typography4-font-family);
   font-size: var(--awb-typography5-font-size);
   font-weight: var(--awb-typography5-font-weight);
   letter-spacing: var(--awb-typography5-letter-spacing);
   line-height: var(--awb-typography5-line-height);
+}
+
+.cm-icon {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.cm-icon--before:after {
+  display: none;
+}
+.cm-icon--after:before {
+  display: none;
+}
+.cm-icon--angle-down:before, .cm-icon--angle-down:after {
+  content: "\f107";
+}
+.cm-icon--angle-up:before, .cm-icon--angle-up:after {
+  content: "\f107";
+  rotate: 180deg;
+}
+.cm-icon--angle-right:before, .cm-icon--angle-right:after {
+  content: "\f107";
+  rotate: 90deg;
+}
+.cm-icon--angle-left:before, .cm-icon--angle-left:after {
+  content: "\f107";
+  rotate: 270deg;
+}
+.cm-icon--menu:before, .cm-icon--menu:after {
+  content: "\f0c9";
+}
+
+.cm-agegate {
+  align-items: center;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.cm-agegate--visible {
+  display: flex;
+}
+.cm-agegate .cm-form {
+  background: var(--awb-color4);
+  max-height: 100%;
+  overflow: auto;
+  padding: 1rem;
+  text-align: center;
+  width: var(--site_width);
+}
+@media only screen and (min-width: 48rem) {
+  .cm-agegate .cm-form {
+    overflow: unset;
+    padding: 0 4rem 2rem;
+  }
+}
+.cm-agegate .cm-form__header img {
+  margin: 0 0 2rem;
+  max-width: 100px;
+}
+@media only screen and (min-width: 48rem) {
+  .cm-agegate .cm-form__header img {
+    margin: -4rem 0 2rem;
+    max-width: 200px;
+  }
+}
+.cm-agegate .cm-form__header p {
+  color: var(--awb-color1);
+  margin: 0 0 1rem;
+}
+.cm-agegate .cm-form__footer p {
+  margin: 4rem 0 0;
+}
+.cm-agegate .cm-form__message {
+  margin: 0 0 4rem;
+}
+.cm-agegate .cm-form__message p {
+  margin: 0 0 1rem;
+}
+.cm-agegate .cm-form__message p:last-child {
+  margin: 0;
+}
+.cm-agegate .cm-form__input {
+  margin: 0 auto 1rem;
+  max-width: calc(var(--site_width) / 3);
+  text-align: left;
+  width: 100%;
+}
+.cm-agegate .cm-form__input input {
+  display: none;
+}
+.cm-agegate .cm-form__input input:checked + label:after {
+  visibility: visible;
+}
+.cm-agegate .cm-form__input label {
+  display: flex;
+  font-weight: bold;
+  padding-left: 2.5rem;
+  position: relative;
+}
+.cm-agegate .cm-form__input label:before {
+  border: 1px solid var(--awb-color5);
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+}
+.cm-agegate .cm-form__input label:after {
+  background: var(--awb-color1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: "";
+  display: inline-block;
+  height: 1.5rem;
+  left: 0.25rem;
+  position: absolute;
+  top: calc(50% - 0.75rem);
+  visibility: hidden;
+  width: 1.5rem;
+}
+.cm-agegate .cm-form__input label:hover {
+  cursor: pointer;
+}
+.cm-agegate .cm-form__input label:hover:after {
+  visibility: visible;
+}
+
+body:has(.cm-agegate--visible) {
+  overflow: hidden;
 }

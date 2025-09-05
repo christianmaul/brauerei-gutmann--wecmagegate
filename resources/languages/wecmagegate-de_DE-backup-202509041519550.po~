@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: WECM Age Gate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 13:49+0000\n"
-"PO-Revision-Date: 2025-09-04 15:30+0000\n"
+"PO-Revision-Date: 2025-09-04 15:18+0000\n"
 "Last-Translator: \n"
-"Language-Team: Deutsch (Sie)\n"
-"Language: de_DE_formal\n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,6 +19,10 @@ msgstr ""
 msgid "Age gate plugin for websites by WECM"
 msgstr "Altersfreigabe-Plugin für Websites von WECM"
 
+#: resources/views/templates/age-gate.blade.php:5
+msgid "Are you of legal drinking age?"
+msgstr ""
+
 #. Author of the plugin
 msgid "Christian Maul"
 msgstr "Christian Maul"
@@ -28,25 +32,13 @@ msgstr "Christian Maul"
 msgid "https://christianmaul.de/"
 msgstr "https://christianmaul.de/"
 
-#: resources/views/templates/age-gate.blade.php:21
+#: resources/views/templates/age-gate.blade.php:22
 msgid "I am not of legal drinking age"
-msgstr "Nein, ich bin noch nicht 16 Jahre alt"
-
-#: resources/views/templates/age-gate.blade.php:15
-msgid "I am of legal drinking age"
-msgstr "Ja, ich bin 16 Jahre oder älter"
-
-#: resources/views/templates/age-gate.blade.php:27
-msgid ""
-"If you confirm your age by clicking “Yes” a cookie will be set in your "
-"browser. This cookie is valid for 30 days. During this period, you will not "
-"need to confirm your age again. Your information will not be transferred to "
-"our system or passed on to third parties at any time."
 msgstr ""
-"Wenn Sie Ihr Alter mit einem Klick auf \"Ja\" bestätigen, wird in Ihrem "
-"Browser ein Cookie gesetzt. Dieser Cookie ist 30 Tage lang gültig. In diesem "
-"Zeitraum müssen Sie Ihr Alter nicht erneut bestätigen. Ihre Angaben werden "
-"zu keinem Zeitpunkt an unser System übertragen oder an Dritte weitergegeben."
+
+#: resources/views/templates/age-gate.blade.php:16
+msgid "I am of legal drinking age"
+msgstr ""
 
 #: resources/views/templates/age-gate.blade.php:10
 msgid ""
@@ -60,12 +52,12 @@ msgstr ""
 "Alkoholmissbrauch. Unsere Website enthält Informationen zu alkoholischen "
 "Getränken und ist daher nur für Besucher ab 16 Jahren zugänglich.\n"
 "\n"
-"Erfüllen Sie das gesetzliche Mindestalter für den Bierkonsum?"
+"Erfüllst Du das gesetzliche Mindestalter für den Bierkonsum?"
 
 #. Name of the plugin
 msgid "WECM Age Gate"
-msgstr "WECM Altersfreigabe"
+msgstr "WECM Altersabfrage"
 
-#: resources/views/templates/age-gate.blade.php:6
+#: resources/views/templates/age-gate.blade.php:4
 msgid "Welcome to Brauerei Gutmann"
-msgstr "Herzlich Willkommen in der Brauerei Gutmann!"
+msgstr ""
