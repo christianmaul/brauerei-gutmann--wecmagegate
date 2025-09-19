@@ -1,7 +1,6 @@
 <?php
 use \Wecm\AgeGate\Bootstrap\Config;
 
-Config::set('excludeIds', [64, 66, 68]);
 Config::set('errorPageId', 64);
 Config::set('cookieName', 'age_verified');
 Config::set('cookieExpireTimestamp', strtotime('+ 4 weeks'));

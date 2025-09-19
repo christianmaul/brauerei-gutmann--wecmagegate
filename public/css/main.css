@@ -1,6 +1,13 @@
 /**
  * Helper Classes
  */
+.cm-font--title {
+  font-family: var(--awb-custom_typography_1-font-family);
+  font-size: var(--awb-custom_typography_1-font-size);
+  font-weight: var(--awb-custom_typography_1-font-weight);
+  letter-spacing: var(--awb-custom_typography_1-letter-spacing);
+  line-height: var(--awb-custom_typography_1-line-height);
+}
 .cm-font--heading {
   font-family: var(--awb-typography1-font-family);
   font-size: var(--awb-typography1-font-size);
@@ -83,6 +90,7 @@
   justify-content: center;
   left: 0;
   position: fixed;
+  padding: 1rem;
   top: 0;
   width: 100%;
   z-index: 100;

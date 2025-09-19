@@ -22,12 +22,12 @@ class AgeGateFormRenderFilter
      */
     public static function handle(): void
     {
-        $excludeIds = Config::get('excludeIds');
         $currentPageId = get_queried_object_id();
+        $excludeIds = self::getExcludedIds();
 
         if (in_array($currentPageId, $excludeIds) || is_user_logged_in()) {
             return;
-        }
+        } 
 
         echo View::render('templates.age-gate', [
             'actionUrl' => admin_url('admin-post.php'),
@@ -38,5 +38,27 @@ class AgeGateFormRenderFilter
             'legalId' => $excludeIds[0] ?? null,
             'privacyId' => $excludeIds[1] ?? null,
         ]);
+    }
+
+    /**
+     * Get excluded Page Ids from settings
+     * 
+     * @return array Array ofq   Page Ids
+     */
+    private static function getExcludedIds(): array
+    {
+        $settingsRaw = SettingsPageProvider::fetch(
+            settingsKey: Config::get('pluginKey') . '-settings',
+            arrayKey: 'exclude_page_ids'
+        );
+
+        $pageIds = explode(
+            string: $settingsRaw,
+            separator: ','
+        );
+
+        return array_filter(
+            array: array_map('trim', $pageIds)
+        );
     }
 }

@@ -23,6 +23,11 @@ ActionProvider::init(
     callback: Wecm\AgeGate\Actions\AgeGateInitAction::class
 )->add();
 
+ActionProvider::init(
+    hookName: 'admin_menu',
+    callback: Wecm\AgeGate\Actions\SettingsPageRegisterAction::class
+)->add(); 
+
 ActionProvider::initBulk(
     hookNames: [
         'admin_post_' . DataTransferEnum::AGE_GATE_SUBMIT->value,

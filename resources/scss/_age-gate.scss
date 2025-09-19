@@ -8,6 +8,7 @@
     justify-content: center;
     left: 0;
     position: fixed;
+    padding: map-get($spacings, sm);
     top: 0;
     width: 100%;
     z-index: 100;
