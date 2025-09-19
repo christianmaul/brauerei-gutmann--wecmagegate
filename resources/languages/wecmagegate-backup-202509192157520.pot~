@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WECM Age Gate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-19 21:57+0000\n"
+"POT-Creation-Date: 2025-09-04 15:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,28 +16,12 @@ msgstr ""
 "X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.20\n"
 "X-Domain: wecmagegate"
 
-#: app/Actions/SettingsPageRegisterAction.php:26
-msgid "Age Gate"
-msgstr ""
-
 #. Description of the plugin
 msgid "Age gate plugin for websites by WECM"
 msgstr ""
 
-#: app/Actions/SettingsPageRegisterAction.php:25
-msgid "Age Gate Settings"
-msgstr ""
-
 #. Author of the plugin
 msgid "Christian Maul"
-msgstr ""
-
-#: app/Actions/AgeGateFormSubmitAction.php:61
-msgid "Cookie could not be set."
-msgstr ""
-
-#: app/Actions/SettingsPageRegisterAction.php:30
-msgid "Exclude Page Ids"
 msgstr ""
 
 #. URI of the plugin
@@ -45,15 +29,15 @@ msgstr ""
 msgid "https://christianmaul.de/"
 msgstr ""
 
-#: resources/views/templates/age-gate.blade.php:22
+#: resources/views/templates/age-gate.blade.php:21
 msgid "I am not of legal drinking age"
 msgstr ""
 
-#: resources/views/templates/age-gate.blade.php:16
+#: resources/views/templates/age-gate.blade.php:15
 msgid "I am of legal drinking age"
 msgstr ""
 
-#: resources/views/templates/age-gate.blade.php:29
+#: resources/views/templates/age-gate.blade.php:27
 msgid ""
 "If you confirm your age by clicking “Yes” a cookie will be set in your "
 "browser. This cookie is valid for 30 days. During this period, you will not "
@@ -61,19 +45,7 @@ msgid ""
 "our system or passed on to third parties at any time."
 msgstr ""
 
-#: app/Actions/SettingsPageRegisterAction.php:34
-msgid "Legal Page Id"
-msgstr ""
-
-#: app/Actions/AgeGateFormSubmitAction.php:82
-msgid "Page ID is missing or invalid."
-msgstr ""
-
-#: app/Actions/SettingsPageRegisterAction.php:38
-msgid "Privacy Page Id"
-msgstr ""
-
-#: resources/views/templates/age-gate.blade.php:11
+#: resources/views/templates/age-gate.blade.php:10
 msgid ""
 "This website requires you to be of legal drinking age in your country to "
 "enter. Please confirm that you are of legal drinking age to proceed."
@@ -83,6 +55,6 @@ msgstr ""
 msgid "WECM Age Gate"
 msgstr ""
 
-#: resources/views/templates/age-gate.blade.php:7
+#: resources/views/templates/age-gate.blade.php:6
 msgid "Welcome to Brauerei Gutmann"
 msgstr ""

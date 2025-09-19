@@ -48,8 +48,15 @@
         }
 
         &__footer {
-            p {
-                margin: map-get($spacings, lg) 0 0;
+            margin: map-get($spacings, lg) 0 0;
+
+            p:last-child {
+                margin: 0;
+            }
+
+            a {
+                display: inline-block;
+                margin: 0 map-get($spacings, xs);
             }
         }
 
@@ -66,7 +73,6 @@
         }
 
         &__input {
-            
             margin: 0 auto map-get($spacings, sm); 
             max-width: map-get($widths, sm);
             text-align: left;

@@ -22,11 +22,18 @@
                     {{ __('I am not of legal drinking age', 'wecmagegate') }}
                 </label>
             </div>
+            
         </div>
         <div class="cm-form__footer">
             <p class="cm-font--small">
                 {{ __('If you confirm your age by clicking “Yes” a cookie will be set in your browser. This cookie is valid for 30 days. During this period, you will not need to confirm your age again. Your information will not be transferred to our system or passed on to third parties at any time.', 'wecmagegate') }}
             </p>
+            <p class="cm-font--small">
+                <a href="{{ get_permalink($legalId) }}" 
+                    title="{{ get_the_title($legalId) . ': ' . __('Read more', 'wecmagegate') }}">{{ get_the_title($legalId) }}</a>
+                <a href="{{ get_permalink($privacyId) }}" 
+                    title="{{ get_the_title($privacyId) . ': ' . __('Read more', 'wecmagegate') }}">{{ get_the_title($privacyId) }}</a>
+            </p> 
         </div>
     </form>
 </div>

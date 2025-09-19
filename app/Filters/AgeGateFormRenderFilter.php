@@ -23,7 +23,8 @@ class AgeGateFormRenderFilter
     public static function handle(): void
     {
         $currentPageId = get_queried_object_id();
-        $excludeIds = self::getExcludedIds();
+        $settingsKey = Config::get('pluginKey');
+        $excludeIds = self::getExcludedIds($settingsKey);
 
         if (in_array($currentPageId, $excludeIds) || is_user_logged_in()) {
             return;
@@ -34,9 +35,9 @@ class AgeGateFormRenderFilter
             'actionName' => DataTransferEnum::AGE_GATE_SUBMIT->value,
             'namePrefix' => Config::get('pluginKey'),
             'logo' => SettingsPageProvider::fetch('fusion_options', 'logo'),
+            'legalId' => SettingsPageProvider::fetch($settingsKey, 'legal_page_id'),
+            'privacyId' => SettingsPageProvider::fetch($settingsKey, 'privacy_page_id'),
             'pageId' => $currentPageId,
-            'legalId' => $excludeIds[0] ?? null,
-            'privacyId' => $excludeIds[1] ?? null,
         ]);
     }
 
@@ -45,10 +46,10 @@ class AgeGateFormRenderFilter
      * 
      * @return array Array ofq   Page Ids
      */
-    private static function getExcludedIds(): array
+    private static function getExcludedIds(string $settingsKey): array
     {
         $settingsRaw = SettingsPageProvider::fetch(
-            settingsKey: Config::get('pluginKey') . '-settings',
+            settingsKey: $settingsKey,
             arrayKey: 'exclude_page_ids'
         );
 

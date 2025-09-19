@@ -126,8 +126,15 @@
   color: var(--awb-color1);
   margin: 0 0 1rem;
 }
-.cm-agegate .cm-form__footer p {
+.cm-agegate .cm-form__footer {
   margin: 4rem 0 0;
+}
+.cm-agegate .cm-form__footer p:last-child {
+  margin: 0;
+}
+.cm-agegate .cm-form__footer a {
+  display: inline-block;
+  margin: 0 0.5rem;
 }
 .cm-agegate .cm-form__message {
   margin: 0 0 4rem;
